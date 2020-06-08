@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    div(class='row')
+        div(class='col-12')
+            video(autoplay='autoplay')
+            canvas
+
+block append js_foot
+    script(src='https://cdn.temasys.com.sg/adapterjs/0.15.x/adapter.screenshare.js')
+    script(src='./javascripts/main.js')
